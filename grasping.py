@@ -8,6 +8,7 @@ from dataclasses import dataclass
 import numpy as np
 import pybullet as p
 from scipy.spatial.transform import Rotation
+from scipy.optimize import linprog
 
 
 @dataclass
@@ -19,10 +20,49 @@ class Grasp:
     width: float
     cone_margin: float
     score: float
+    transport_capacity_kg: float | None = None
 
     @property
     def quaternion(self):
         return Rotation.from_matrix(self.rotation).as_quat()
+
+
+def spatial_grasps(points, normals, support_height, center_of_mass, base_xy, mu=.5):
+    """Seat central contacts using inclined approaches and real pad dimensions.
+
+    Palm clearance is checked against the simulator geometry by the planner,
+    rather than pushing the wrist above the object's entire bounding box.
+    """
+    points, center_of_mass = np.asarray(points), np.asarray(center_of_mass)
+    pairs = generate_grasps(points, normals, support_height, mu, max_grasps=200)
+    pairs.sort(key=lambda g: np.linalg.norm(g.contacts.mean(axis=0)-center_of_mass))
+    facing = np.r_[center_of_mass[:2]-base_xy, 0.]
+    facing /= max(np.linalg.norm(facing), 1e-9)
+    candidates = []
+    for g in pairs[:60]:
+        y = g.rotation[:, 1]
+        horizontal = facing-(facing@y)*y
+        if np.linalg.norm(horizontal) < .1:
+            horizontal = np.cross(y, [0., 0., 1.])
+        horizontal /= np.linalg.norm(horizontal)
+        for tilt in np.deg2rad([15., 20., 30., 45., 60., 75.]):
+            x = np.cos(tilt)*horizontal+np.sin(tilt)*np.array([0., 0., -1.])
+            x -= (x@y)*y
+            x /= np.linalg.norm(x)
+            z = np.cross(x, y)
+            rotation = np.column_stack((x, y, z))
+            for depth in [.024, .028, .016, .032, .008, 0.]:
+                center = g.contacts.mean(axis=0)-depth*x
+                pad_floor = .0315*abs(x[2])+.0575*abs(y[2])+.012*abs(z[2])
+                center[2] = max(center[2], support_height+.003+pad_floor)
+                offset = (center_of_mass-center)@rotation
+                if abs(offset[2]) > .013 or abs(offset[0]) > .036:
+                    continue
+                score = (3*g.cone_margin-20*np.linalg.norm(g.contacts.mean(axis=0)-center_of_mass)
+                         -4*abs(depth-.012)-12*abs(offset[2]))
+                candidates.append(Grasp(g.contacts.copy(), g.normals.copy(), center,
+                                        rotation, g.width, g.cone_margin, float(score)))
+    return sorted(candidates, key=lambda g: g.score, reverse=True)
 
 
 def antipodal_margin(points, normals, mu=0.5):
@@ -96,6 +136,60 @@ def generate_grasps(points, normals, table_height, mu=0.5, max_grasps=80):
     return grasps
 
 
+def wrench_grasps(points, normals, table_height, mu=.25, max_grasps=80, carry_mode='rotate'):
+    """Rank finite pad contacts by gravity/acceleration wrench feasibility.
+
+    Contact patches come from the observed cloud inside the 63 x 24 mm pads.
+    An eight-sided friction pyramid and the existing 60 N per-jaw limit give
+    an approximate mass capacity. This is a ranking model, not a guarantee.
+    """
+    points, normals = np.asarray(points, float), np.asarray(normals, float)
+    grasps = generate_grasps(points, normals, table_height, mu, max_grasps)
+    if not grasps:
+        return []
+    com = (points.min(axis=0)+points.max(axis=0))/2
+    angles = np.arange(8)*np.pi/4
+    for grasp in grasps:
+        grasp.transport_capacity_kg = 0.
+        local = (points-grasp.center)@grasp.rotation
+        inside = (np.abs(local[:, 0]) < .030) & (np.abs(local[:, 2]) < .011)
+        patch = local[inside]
+        if len(patch) < 4:
+            continue
+        locations, forces, sides = [], [], []
+        for side in (-1, 1):
+            extreme = np.max(side*patch[:, 1])
+            contacts = patch[side*patch[:, 1] > extreme-.0015]
+            if len(contacts) > 16:
+                contacts = contacts[np.linspace(0, len(contacts)-1, 16).astype(int)]
+            for contact in contacts:
+                for angle in angles:
+                    locations.append(contact-(com-grasp.center)@grasp.rotation)
+                    forces.append([mu*np.cos(angle), -side, mu*np.sin(angle)])
+                    sides.append(side)
+        forces, locations, sides = np.array(forces), np.array(locations), np.array(sides)
+        wrench = np.column_stack((forces, np.cross(locations, forces))).T
+        budget = np.array([sides == -1, sides == 1], float)
+        carry = Rotation.from_matrix(grasp.rotation)
+        if carry_mode == 'rotate':
+            carry = Rotation.from_euler('y', -np.pi/2)*carry
+        elif carry_mode == 'support':
+            carry = carry*Rotation.from_euler('z', -np.pi/2)
+        capacities = []
+        for acceleration in ([0, 0, -9.8], [.8, 0, -9.8], [-.8, 0, -9.8],
+                             [0, .8, -9.8], [0, -.8, -9.8]):
+            external = np.r_[carry.inv().apply(acceleration), [0, 0, 0]]
+            eq = np.column_stack((wrench, external))
+            cost = np.r_[np.zeros(wrench.shape[1]), -1.]
+            result = linprog(cost, A_ub=np.column_stack((budget, [0, 0])),
+                b_ub=[60., 60.], A_eq=eq, b_eq=np.zeros(6), bounds=(0, None), method='highs')
+            capacities.append(float(result.x[-1]) if result.success else 0.)
+        grasp.transport_capacity_kg = min(capacities)
+        grasp.score += 10*np.log1p(grasp.transport_capacity_kg)
+    return sorted(grasps, key=lambda g: g.score, reverse=True)
+
+
+
 class MotionPlanner:
     """Damped Jacobian IK with fixed base, plus RRT-Connect and local checks.
 
@@ -113,12 +207,18 @@ class MotionPlanner:
         self.fingers = {self.links['r_gripper_finger_link'], self.links['l_gripper_finger_link']}
         self.obstacles = [env.table_id, env.maze_id]
         self.checks = 0
+        self.payload = None
+        self.payload_support = None
+        self.palm_contact = False
+        self.position_tolerance = .0005
+        self.orientation_tolerance = .002
         # Exclude adjacent/fixed assemblies from geometric self-collision tests.
         parents = {j: p.getJointInfo(self.robot, j)[16] for j in range(p.getNumJoints(self.robot))}
         self.self_pairs = set()
         arm = {self.links[n] for n in ['shoulder_lift_link', 'upperarm_roll_link',
                'elbow_flex_link', 'forearm_roll_link', 'wrist_flex_link',
                'wrist_roll_link', 'gripper_link', 'r_gripper_finger_link', 'l_gripper_finger_link']}
+        self.floor_links = arm
         for a in arm:
             for b in range(-1, p.getNumJoints(self.robot)):
                 if a == b:
@@ -136,7 +236,9 @@ class MotionPlanner:
         state = p.getLinkState(self.robot, self.ee, computeForwardKinematics=True)
         return np.array(state[4]), Rotation.from_quat(state[5])
 
-    def ik(self, position, quaternion, seed, attempts=5):
+    def ik(self, position, quaternion, seed, attempts=5, collision_free=False, position_tolerance=None):
+        if position_tolerance is None:
+            position_tolerance = self.position_tolerance
         desired = Rotation.from_quat(quaternion)
         for attempt in range(attempts):
             q = seed.copy().astype(float)
@@ -146,7 +248,9 @@ class MotionPlanner:
             for _ in range(180):
                 pos, rot = self.pose(q)
                 error = np.r_[position - pos, (desired * rot.inv()).as_rotvec()]
-                if np.linalg.norm(error[:3]) < 0.003 and np.linalg.norm(error[3:]) < 0.025:
+                if np.linalg.norm(error[:3]) < position_tolerance and np.linalg.norm(error[3:]) < self.orientation_tolerance:
+                    if collision_free and not self.clear(q):
+                        break
                     return q
                 linear, angular = p.calculateJacobian(self.robot, self.ee, [0, 0, 0],
                     q.tolist(), [0.] * len(q), [0.] * len(q))
@@ -158,15 +262,38 @@ class MotionPlanner:
 
     def clear(self, q, allow_fingers=False):
         self.checks += 1
+        self.last_collision = None
         self.env._set_qpos(q)
+        if self.payload is not None:
+            ee = p.getLinkState(self.robot, self.ee, computeForwardKinematics=True)
+            pos, orn = p.multiplyTransforms(ee[4], ee[5], *self.payload)
+            p.resetBasePositionAndOrientation(self.env.object_id, pos, orn)
+            for body in self.obstacles + [self.env.plane_id]:
+                contacts = p.getClosestPoints(self.env.object_id, body, distance=.003)
+                if body == self.payload_support:
+                    contacts = [c for c in contacts if c[8] < -.005]
+                if contacts:
+                    self.last_collision = f'payload versus body {body}'
+                    return False
+            allow_fingers = True
         for body in self.obstacles:
             if p.getClosestPoints(self.robot, body, distance=0.002):
+                self.last_collision = f'robot versus body {body}'
+                return False
+        for link in self.floor_links:
+            if p.getClosestPoints(self.robot, self.env.plane_id, distance=.002, linkIndexA=link):
+                self.last_collision = f'robot arm link {link} versus floor'
                 return False
         for contact in p.getClosestPoints(self.robot, self.env.object_id, distance=0.001):
-            if not (allow_fingers and contact[3] in self.fingers):
+            permitted = self.fingers | ({self.ee} if self.payload is not None else set())
+            if self.palm_contact and allow_fingers and contact[3] == self.ee and contact[8] >= -.0001:
+                continue
+            if not (allow_fingers and contact[3] in permitted):
+                self.last_collision = f'object versus robot link {contact[3]}'
                 return False
         for a, b in self.self_pairs:
             if p.getClosestPoints(self.robot, self.robot, distance=-0.003, linkIndexA=a, linkIndexB=b):
+                self.last_collision = f'robot links {a} and {b}'
                 return False
         return True
 
@@ -226,3 +353,30 @@ class MotionPlanner:
             path.append(next_q)
             q = next_q
         return path
+
+    def contact_approach(self, start, positions, quaternion):
+        """Stop at first palm contact without permitting deep penetration."""
+        path, q = [start.copy()], start.copy()
+        self.palm_contact = True
+        try:
+            for pos in positions:
+                nxt = self.ik(pos, quaternion, q, attempts=1, position_tolerance=.0005)
+                if nxt is None:
+                    return None
+                if not self.edge(q, nxt, True, resolution=.015):
+                    if self.last_collision != f'object versus robot link {self.ee}':
+                        return None
+                    low, high = q.copy(), nxt.copy()
+                    for _ in range(10):
+                        mid = (low+high)/2
+                        if self.clear(mid, True):
+                            low = mid
+                        else:
+                            high = mid
+                    path.append(low)
+                    return path
+                path.append(nxt)
+                q = nxt
+            return path
+        finally:
+            self.palm_contact = False

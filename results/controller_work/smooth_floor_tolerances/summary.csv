@@ -1,0 +1,16 @@
+object_idx,seed,success,reason,duration_physics_steps,stable_hold_control_steps,final_floor_clearance_m,max_hold_drift_m
+2,0,True,regrasped from floor and held,3570,50,0.6663982763084105,0.0007446193895288576
+2,7,True,regrasped from floor and held,3580,50,0.6587234876625785,0.0001372419079095756
+2,42,True,regrasped from floor and held,3570,50,0.6114359081475662,0.0006191761971220381
+4,0,True,regrasped from floor and held,3605,50,0.6694919286981136,5.946762057407174e-05
+4,7,True,regrasped from floor and held,3620,50,0.6702717582783966,0.0004115297841953765
+4,42,True,regrasped from floor and held,3625,50,0.66443669555309,0.00022885800253998436
+5,0,False,object did not settle on the floor,500,0,,
+5,7,False,object did not settle on the floor,500,0,,
+5,42,False,object did not settle on the floor,500,0,,
+6,0,False,object did not settle on the floor,500,0,,
+6,7,False,object did not settle on the floor,500,0,,
+6,42,False,object did not settle on the floor,500,0,,
+14,0,True,regrasped from floor and held,3640,50,0.661147536351663,0.0008662732051116521
+14,7,True,regrasped from floor and held,3645,50,0.6598462795781848,0.0007940549590761833
+14,42,True,regrasped from floor and held,3640,50,0.6621505815774764,0.0008129404520241781

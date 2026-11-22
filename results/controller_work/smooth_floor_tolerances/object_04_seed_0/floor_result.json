@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "reason": "regrasped from floor and held",
+  "start_physics_steps": 0,
+  "attempts": 1,
+  "stable_hold_control_steps": 50,
+  "floor_pose": [
+    -0.9996855438865343,
+    0.0007598335666791674,
+    0.028598333202707275
+  ],
+  "planning_configurations": 5,
+  "grasp": {
+    "center": [
+      -1.0057107701855896,
+      0.0016146601847087695,
+      0.03900000000000033
+    ],
+    "quaternion": [
+      0.031121536397164654,
+      0.7064215809078032,
+      -0.03163813813875916,
+      0.7063986326537678
+    ],
+    "width": 0.07521155189961098
+  },
+  "approach_position_error_m": 0.002042036759781621,
+  "max_hold_drift_m": 5.946762057407174e-05,
+  "final_floor_clearance_m": 0.6694919286981136,
+  "end_physics_steps": 3605,
+  "duration_physics_steps": 3605,
+  "object_idx": 4,
+  "seed": 0,
+  "test_mode": "isolated floor initial condition",
+  "fallen_initial_orientation": true,
+  "max_arm_floor_penetration_m": 0.0,
+  "max_robot_obstacle_penetration_m": 0.0
+}

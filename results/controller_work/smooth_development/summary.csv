@@ -1,0 +1,16 @@
+object_idx,seed,success,reason,pick_success,distance_to_goal_m,physics_steps,max_carry_drift_m,carry_stable,drops,recovery_attempts,successful_recoveries,recovery_physics_steps,speed_m_s,acceleration_m_s2
+2,0,True,delivered and held at goal,True,0.013533144833336728,13695,0.024312761816623178,True,0,0,0,0,1.2,0.8
+2,7,True,delivered and held at goal,True,0.010308993443914548,13630,0.021094281478168164,True,0,0,0,0,1.2,0.8
+2,42,True,delivered and held at goal,True,0.01759253564886982,12915,0.019873972163604908,True,0,0,0,0,1.2,0.8
+4,0,True,delivered and held at goal,True,0.018253025845316635,13275,0.024046010156100712,True,0,0,0,0,1.2,0.8
+4,7,True,delivered and held at goal,True,0.012711208530162261,12705,0.0130132422234123,True,0,0,0,0,1.2,0.8
+4,42,True,delivered and held at goal,True,0.004952833635356566,13210,0.02815385291540536,True,0,0,0,0,1.2,0.8
+5,0,True,delivered and held at goal,True,0.01763515690174904,12310,0.02704522634138508,True,0,0,0,0,1.2,0.8
+5,7,False,final object-position correction blocked,True,0.3635438708050047,11440,0.014770554915502814,False,0,0,0,0,1.2,0.8
+5,42,True,delivered and held at goal,True,0.015743718950999956,12820,0.0324494243920914,True,0,0,0,0,1.2,0.8
+6,0,True,delivered and held at goal,True,0.003623641201700486,12040,0.004114114856175894,True,0,0,0,0,1.2,0.8
+6,7,True,delivered and held at goal,True,0.00038379772884584784,12670,0.001218956358704148,True,0,0,0,0,1.2,0.8
+6,42,True,delivered and held at goal,True,0.0027500800921932784,12965,0.0052564578000350685,True,0,0,0,0,1.2,0.8
+14,0,True,delivered and held at goal,True,0.015192321718008177,12590,0.025220417070974124,True,0,0,0,0,1.2,0.8
+14,7,False,object slipped from the gripper,True,2.091249521567294,11315,0.09240985683355611,False,1,0,0,0,1.2,0.8
+14,42,True,delivered and held at goal,True,0.006406548858683488,13635,0.0041983202388920044,True,0,0,0,0,1.2,0.8

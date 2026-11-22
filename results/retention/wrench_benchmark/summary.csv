@@ -1,0 +1,16 @@
+object_idx,seed,success,reason,pick_success,distance_to_goal_m,physics_steps,max_carry_drift_m,carry_stable
+2,0,False,object slipped from the gripper,True,18.90908017048825,5295,0.09097985554380404,False
+2,7,False,object slipped from the gripper,True,18.134007028612107,3745,0.09171019111270477,False
+2,42,False,object slipped from the gripper,True,18.378533842300712,5700,0.09912594884820497,False
+4,0,False,object slipped from the gripper,True,18.059836431876274,3485,0.11135703295543498,False
+4,7,False,object slipped from the gripper,False,18.944162254076623,7255,0.09906900695693874,False
+4,42,False,object slipped from the gripper,False,18.20562957970917,4800,0.10201600124690824,False
+5,0,True,delivered and held at goal,True,0.046053599965039,13695,0.04832457397836903,True
+5,7,True,delivered and held at goal,True,0.04889793499442915,13870,0.05661371078465294,True
+5,42,False,object slipped from the gripper,True,18.26799729388131,6095,0.09525853867785498,False
+6,0,False,final object-position correction blocked,True,0.35213733685646464,12790,0.010534823356597667,False
+6,7,False,object slipped from the gripper,True,18.874528166017765,6140,0.10546774923862899,False
+6,42,False,grasp did not remain stable,False,17.560613512401048,3425,0.0,False
+14,0,False,object slipped from the gripper,True,18.957003316562147,6200,0.09572701247466596,False
+14,7,False,object slipped from the gripper,True,18.932291789023772,6025,0.09714032961562451,False
+14,42,False,object slipped from the gripper,True,18.355584474711137,6175,0.10284403829074339,False

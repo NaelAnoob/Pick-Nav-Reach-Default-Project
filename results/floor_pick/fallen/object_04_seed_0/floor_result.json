@@ -1,0 +1,35 @@
+{
+  "success": false,
+  "reason": "floor lift path blocked",
+  "start_physics_steps": 0,
+  "attempts": 1,
+  "stable_hold_control_steps": 0,
+  "floor_pose": [
+    -0.9996855438865343,
+    0.0007598335666791674,
+    0.028598333202707275
+  ],
+  "grasp": {
+    "center": [
+      -0.9986176160736868,
+      0.0020447615891858693,
+      0.03900000000000033
+    ],
+    "quaternion": [
+      -0.01940065481583715,
+      0.7068405864073715,
+      0.02097323754206771,
+      0.7067956729543582
+    ],
+    "width": 0.07500171878698242
+  },
+  "approach_position_error_m": 0.0025821531950815275,
+  "end_physics_steps": 1470,
+  "duration_physics_steps": 1470,
+  "object_idx": 4,
+  "seed": 0,
+  "test_mode": "isolated floor initial condition",
+  "fallen_initial_orientation": true,
+  "max_arm_floor_penetration_m": 0.0,
+  "max_robot_obstacle_penetration_m": 0.0
+}

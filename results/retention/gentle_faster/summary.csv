@@ -1,0 +1,6 @@
+object_idx,seed,success,reason,pick_success,distance_to_goal_m,physics_steps,max_carry_drift_m,carry_stable
+2,0,False,object slipped from the gripper,True,11.303636397919199,14105,0.10007628942123521,False
+4,0,False,object slipped from the gripper,True,18.924641562686496,6370,0.10773699411929002,False
+5,0,False,15000 physics-step budget exhausted,True,7.535414614563339,15000,0.04543024452221196,False
+6,0,False,15000 physics-step budget exhausted,True,7.436627607885272,15000,0.0070312367138536756,False
+14,0,False,object slipped from the gripper,True,12.187335995457666,13700,0.09283454295019468,False

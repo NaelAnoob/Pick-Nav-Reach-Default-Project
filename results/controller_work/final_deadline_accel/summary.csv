@@ -1,0 +1,2 @@
+object_idx,seed,success,reason,pick_success,distance_to_goal_m,physics_steps,max_carry_drift_m,carry_stable,drops,recovery_attempts,successful_recoveries,recovery_physics_steps,speed_m_s,acceleration_m_s2
+2,83,True,delivered and held at goal,True,0.0133845465745951,14560,0.020107314395585954,True,0,0,0,0,1.8,0.8

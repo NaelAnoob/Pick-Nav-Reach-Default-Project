@@ -1,0 +1,434 @@
+[
+  {
+    "success": true,
+    "reason": "regrasped from floor and held",
+    "start_physics_steps": 0,
+    "attempts": 1,
+    "stable_hold_control_steps": 50,
+    "floor_pose": [
+      -1.0048228216934243,
+      0.0004042519575916364,
+      0.03467920448503002
+    ],
+    "planning_configurations": 45,
+    "grasp": {
+      "center": [
+        -1.0044768347794468,
+        -0.006543802735579569,
+        0.03900000000000033
+      ],
+      "quaternion": [
+        0.4489350555517068,
+        0.5463124709328774,
+        -0.4317306433740265,
+        0.5600077245644466
+      ],
+      "width": 0.06660992093210635
+    },
+    "approach_position_error_m": 0.003804897907759085,
+    "max_hold_drift_m": 0.0007446193895288576,
+    "final_floor_clearance_m": 0.6663982763084105,
+    "end_physics_steps": 3570,
+    "duration_physics_steps": 3570,
+    "object_idx": 2,
+    "seed": 0,
+    "test_mode": "isolated floor initial condition",
+    "fallen_initial_orientation": true,
+    "max_arm_floor_penetration_m": 0.0,
+    "max_robot_obstacle_penetration_m": 0.0
+  },
+  {
+    "success": true,
+    "reason": "regrasped from floor and held",
+    "start_physics_steps": 0,
+    "attempts": 1,
+    "stable_hold_control_steps": 50,
+    "floor_pose": [
+      -0.9961035417021361,
+      -0.002874353810158214,
+      0.03467905143634679
+    ],
+    "planning_configurations": 5,
+    "grasp": {
+      "center": [
+        -1.0044700461227034,
+        -0.016451814827892146,
+        0.03900000000000033
+      ],
+      "quaternion": [
+        -0.3655906530563869,
+        0.6052631447542502,
+        0.36323237494360944,
+        0.6066813346336156
+      ],
+      "width": 0.06579085177890258
+    },
+    "approach_position_error_m": 0.0021376191523808682,
+    "max_hold_drift_m": 0.0001372419079095756,
+    "final_floor_clearance_m": 0.6587234876625785,
+    "end_physics_steps": 3580,
+    "duration_physics_steps": 3580,
+    "object_idx": 2,
+    "seed": 7,
+    "test_mode": "isolated floor initial condition",
+    "fallen_initial_orientation": true,
+    "max_arm_floor_penetration_m": 0.0,
+    "max_robot_obstacle_penetration_m": 0.0
+  },
+  {
+    "success": true,
+    "reason": "regrasped from floor and held",
+    "start_physics_steps": 0,
+    "attempts": 1,
+    "stable_hold_control_steps": 50,
+    "floor_pose": [
+      -0.9953133103675891,
+      -0.0012048457487291245,
+      0.03467914562122665
+    ],
+    "planning_configurations": 10,
+    "grasp": {
+      "center": [
+        -1.000255939242273,
+        -0.0302295018724327,
+        0.03900000000000033
+      ],
+      "quaternion": [
+        -0.4406495690618168,
+        0.5530171401372972,
+        0.43371137248709524,
+        0.5584751072119151
+      ],
+      "width": 0.06614770470200006
+    },
+    "approach_position_error_m": 0.003957593284663848,
+    "max_hold_drift_m": 0.0006191761971220381,
+    "final_floor_clearance_m": 0.6114359081475662,
+    "end_physics_steps": 3570,
+    "duration_physics_steps": 3570,
+    "object_idx": 2,
+    "seed": 42,
+    "test_mode": "isolated floor initial condition",
+    "fallen_initial_orientation": true,
+    "max_arm_floor_penetration_m": 0.0,
+    "max_robot_obstacle_penetration_m": 0.0
+  },
+  {
+    "success": true,
+    "reason": "regrasped from floor and held",
+    "start_physics_steps": 0,
+    "attempts": 1,
+    "stable_hold_control_steps": 50,
+    "floor_pose": [
+      -0.9996855438865343,
+      0.0007598335666791674,
+      0.028598333202707275
+    ],
+    "planning_configurations": 5,
+    "grasp": {
+      "center": [
+        -1.0057107701855896,
+        0.0016146601847087695,
+        0.03900000000000033
+      ],
+      "quaternion": [
+        0.031121536397164654,
+        0.7064215809078032,
+        -0.03163813813875916,
+        0.7063986326537678
+      ],
+      "width": 0.07521155189961098
+    },
+    "approach_position_error_m": 0.002042036759781621,
+    "max_hold_drift_m": 5.946762057407174e-05,
+    "final_floor_clearance_m": 0.6694919286981136,
+    "end_physics_steps": 3605,
+    "duration_physics_steps": 3605,
+    "object_idx": 4,
+    "seed": 0,
+    "test_mode": "isolated floor initial condition",
+    "fallen_initial_orientation": true,
+    "max_arm_floor_penetration_m": 0.0,
+    "max_robot_obstacle_penetration_m": 0.0
+  },
+  {
+    "success": true,
+    "reason": "regrasped from floor and held",
+    "start_physics_steps": 0,
+    "attempts": 1,
+    "stable_hold_control_steps": 50,
+    "floor_pose": [
+      -1.0006186953074003,
+      -0.0003877572532851452,
+      0.028599412448200197
+    ],
+    "planning_configurations": 5,
+    "grasp": {
+      "center": [
+        -1.002813840922182,
+        -6.875308351931425e-05,
+        0.03900000000000033
+      ],
+      "quaternion": [
+        0.18217108766954174,
+        0.6832376561763089,
+        -0.17686864521819046,
+        0.6846294489274339
+      ],
+      "width": 0.07482289317271082
+    },
+    "approach_position_error_m": 0.00326355659432028,
+    "max_hold_drift_m": 0.0004115297841953765,
+    "final_floor_clearance_m": 0.6702717582783966,
+    "end_physics_steps": 3620,
+    "duration_physics_steps": 3620,
+    "object_idx": 4,
+    "seed": 7,
+    "test_mode": "isolated floor initial condition",
+    "fallen_initial_orientation": true,
+    "max_arm_floor_penetration_m": 0.0,
+    "max_robot_obstacle_penetration_m": 0.0
+  },
+  {
+    "success": true,
+    "reason": "regrasped from floor and held",
+    "start_physics_steps": 0,
+    "attempts": 1,
+    "stable_hold_control_steps": 50,
+    "floor_pose": [
+      -1.0004343039904344,
+      -0.0006912306129897045,
+      0.028598381507744543
+    ],
+    "planning_configurations": 4,
+    "grasp": {
+      "center": [
+        -1.0026538280688504,
+        -0.0008696667514638892,
+        0.03900000000000033
+      ],
+      "quaternion": [
+        0.06434463262654266,
+        0.7041731095775777,
+        -0.058874245020903736,
+        0.7046515616056056
+      ],
+      "width": 0.07521989506247587
+    },
+    "approach_position_error_m": 0.0032683692337368534,
+    "max_hold_drift_m": 0.00022885800253998436,
+    "final_floor_clearance_m": 0.66443669555309,
+    "end_physics_steps": 3625,
+    "duration_physics_steps": 3625,
+    "object_idx": 4,
+    "seed": 42,
+    "test_mode": "isolated floor initial condition",
+    "fallen_initial_orientation": true,
+    "max_arm_floor_penetration_m": 0.0,
+    "max_robot_obstacle_penetration_m": 0.0
+  },
+  {
+    "success": false,
+    "reason": "object did not settle on the floor",
+    "start_physics_steps": 0,
+    "attempts": 0,
+    "stable_hold_control_steps": 0,
+    "end_physics_steps": 500,
+    "duration_physics_steps": 500,
+    "object_idx": 5,
+    "seed": 0,
+    "test_mode": "isolated floor initial condition",
+    "fallen_initial_orientation": true,
+    "max_arm_floor_penetration_m": 0.0,
+    "max_robot_obstacle_penetration_m": 0.0
+  },
+  {
+    "success": false,
+    "reason": "object did not settle on the floor",
+    "start_physics_steps": 0,
+    "attempts": 0,
+    "stable_hold_control_steps": 0,
+    "end_physics_steps": 500,
+    "duration_physics_steps": 500,
+    "object_idx": 5,
+    "seed": 7,
+    "test_mode": "isolated floor initial condition",
+    "fallen_initial_orientation": true,
+    "max_arm_floor_penetration_m": 0.0,
+    "max_robot_obstacle_penetration_m": 0.0
+  },
+  {
+    "success": false,
+    "reason": "object did not settle on the floor",
+    "start_physics_steps": 0,
+    "attempts": 0,
+    "stable_hold_control_steps": 0,
+    "end_physics_steps": 500,
+    "duration_physics_steps": 500,
+    "object_idx": 5,
+    "seed": 42,
+    "test_mode": "isolated floor initial condition",
+    "fallen_initial_orientation": true,
+    "max_arm_floor_penetration_m": 0.0,
+    "max_robot_obstacle_penetration_m": 0.0
+  },
+  {
+    "success": false,
+    "reason": "object did not settle on the floor",
+    "start_physics_steps": 0,
+    "attempts": 0,
+    "stable_hold_control_steps": 0,
+    "end_physics_steps": 500,
+    "duration_physics_steps": 500,
+    "object_idx": 6,
+    "seed": 0,
+    "test_mode": "isolated floor initial condition",
+    "fallen_initial_orientation": true,
+    "max_arm_floor_penetration_m": 0.0,
+    "max_robot_obstacle_penetration_m": 0.0
+  },
+  {
+    "success": false,
+    "reason": "object did not settle on the floor",
+    "start_physics_steps": 0,
+    "attempts": 0,
+    "stable_hold_control_steps": 0,
+    "end_physics_steps": 500,
+    "duration_physics_steps": 500,
+    "object_idx": 6,
+    "seed": 7,
+    "test_mode": "isolated floor initial condition",
+    "fallen_initial_orientation": true,
+    "max_arm_floor_penetration_m": 0.0,
+    "max_robot_obstacle_penetration_m": 0.0
+  },
+  {
+    "success": false,
+    "reason": "object did not settle on the floor",
+    "start_physics_steps": 0,
+    "attempts": 0,
+    "stable_hold_control_steps": 0,
+    "end_physics_steps": 500,
+    "duration_physics_steps": 500,
+    "object_idx": 6,
+    "seed": 42,
+    "test_mode": "isolated floor initial condition",
+    "fallen_initial_orientation": true,
+    "max_arm_floor_penetration_m": 0.0,
+    "max_robot_obstacle_penetration_m": 0.0
+  },
+  {
+    "success": true,
+    "reason": "regrasped from floor and held",
+    "start_physics_steps": 0,
+    "attempts": 1,
+    "stable_hold_control_steps": 50,
+    "floor_pose": [
+      -0.9992985953827516,
+      0.001025252146424232,
+      0.03944033920542759
+    ],
+    "planning_configurations": 1,
+    "grasp": {
+      "center": [
+        -0.9989813676046295,
+        -0.003687936995554776,
+        0.04965121483546239
+      ],
+      "quaternion": [
+        -0.5197292936450468,
+        -0.4794595512941846,
+        0.520348960582253,
+        -0.47878696642762636
+      ],
+      "width": 0.05101318364770345
+    },
+    "approach_position_error_m": 0.0031485492882116694,
+    "max_hold_drift_m": 0.0008662732051116521,
+    "final_floor_clearance_m": 0.661147536351663,
+    "end_physics_steps": 3640,
+    "duration_physics_steps": 3640,
+    "object_idx": 14,
+    "seed": 0,
+    "test_mode": "isolated floor initial condition",
+    "fallen_initial_orientation": true,
+    "max_arm_floor_penetration_m": 0.0,
+    "max_robot_obstacle_penetration_m": 0.0
+  },
+  {
+    "success": true,
+    "reason": "regrasped from floor and held",
+    "start_physics_steps": 0,
+    "attempts": 1,
+    "stable_hold_control_steps": 50,
+    "floor_pose": [
+      -1.001137413180691,
+      -0.0005095247189744064,
+      0.03944034112083708
+    ],
+    "planning_configurations": 1,
+    "grasp": {
+      "center": [
+        -1.0050967264107205,
+        -0.006522224637024511,
+        0.0492589975385353
+      ],
+      "quaternion": [
+        0.6190191679872122,
+        0.34178248882062356,
+        -0.6175305930947825,
+        0.34446475377316366
+      ],
+      "width": 0.05054879647691622
+    },
+    "approach_position_error_m": 0.0018202049216553056,
+    "max_hold_drift_m": 0.0007940549590761833,
+    "final_floor_clearance_m": 0.6598462795781848,
+    "end_physics_steps": 3645,
+    "duration_physics_steps": 3645,
+    "object_idx": 14,
+    "seed": 7,
+    "test_mode": "isolated floor initial condition",
+    "fallen_initial_orientation": true,
+    "max_arm_floor_penetration_m": 0.0,
+    "max_robot_obstacle_penetration_m": 0.0
+  },
+  {
+    "success": true,
+    "reason": "regrasped from floor and held",
+    "start_physics_steps": 0,
+    "attempts": 1,
+    "stable_hold_control_steps": 50,
+    "floor_pose": [
+      -1.0008641042261561,
+      -0.0008954894129084179,
+      0.03944033949519438
+    ],
+    "planning_configurations": 1,
+    "grasp": {
+      "center": [
+        -0.9993279184713513,
+        0.00923558564620013,
+        0.05086360073968313
+      ],
+      "quaternion": [
+        -0.5369038970847932,
+        -0.46014585219815013,
+        0.5388258249519504,
+        -0.4578937981288349
+      ],
+      "width": 0.051020492702740124
+    },
+    "approach_position_error_m": 0.003140994618458701,
+    "max_hold_drift_m": 0.0008129404520241781,
+    "final_floor_clearance_m": 0.6621505815774764,
+    "end_physics_steps": 3640,
+    "duration_physics_steps": 3640,
+    "object_idx": 14,
+    "seed": 42,
+    "test_mode": "isolated floor initial condition",
+    "fallen_initial_orientation": true,
+    "max_arm_floor_penetration_m": 0.0,
+    "max_robot_obstacle_penetration_m": 0.0
+  }
+]

@@ -1,0 +1,4 @@
+object_idx,seed,success,reason,pick_success,distance_to_goal_m,physics_steps,max_carry_drift_m,carry_stable
+2,0,False,15000 physics-step budget exhausted,True,11.037149913658327,15000,0.03136988056132101,False
+5,0,False,15000 physics-step budget exhausted,True,8.114371750148102,15000,0.04455382931174543,False
+14,0,False,15000 physics-step budget exhausted,True,10.52332814970098,15000,0.03247300412394236,False

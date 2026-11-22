@@ -1,0 +1,98 @@
+[
+  {
+    "index": 0,
+    "flip": false,
+    "approach": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "center": [
+      0.0022731302777994986,
+      0.0003624840163659517,
+      0.6700351107759714
+    ],
+    "stage": "approach",
+    "collision": "object versus robot link 20"
+  },
+  {
+    "index": 0,
+    "flip": true,
+    "approach": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "center": [
+      0.0022731302777994986,
+      0.0003624840163659517,
+      0.6700351107759714
+    ],
+    "stage": "approach",
+    "collision": "object versus robot link 20"
+  },
+  {
+    "index": 1,
+    "flip": false,
+    "approach": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "center": [
+      -0.009370109753471125,
+      0.0003560749429968972,
+      0.664
+    ],
+    "stage": "approach",
+    "collision": "object versus robot link 20"
+  },
+  {
+    "index": 1,
+    "flip": true,
+    "approach": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "center": [
+      -0.009370109753471125,
+      0.0003560749429968972,
+      0.664
+    ],
+    "stage": "approach",
+    "collision": "object versus robot link 20"
+  },
+  {
+    "index": 2,
+    "flip": false,
+    "approach": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "center": [
+      0.015975931727700007,
+      0.0004030049655819011,
+      0.6708989301235597
+    ],
+    "stage": "approach",
+    "collision": "object versus robot link 20"
+  },
+  {
+    "index": 2,
+    "flip": true,
+    "approach": [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "center": [
+      0.015975931727700007,
+      0.0004030049655819011,
+      0.6708989301235597
+    ],
+    "stage": "approach",
+    "collision": "object versus robot link 20"
+  }
+]

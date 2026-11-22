@@ -1,0 +1,22 @@
+{
+  "success": false,
+  "reason": "no collision-free floor grasp and stance",
+  "start_physics_steps": 0,
+  "attempts": 0,
+  "stable_hold_control_steps": 0,
+  "floor_pose": [
+    -1.0006186953074003,
+    -0.0003877572532851452,
+    0.028599412448200197
+  ],
+  "planning_configurations": 129,
+  "planning_search_limit_reached": true,
+  "end_physics_steps": 105,
+  "duration_physics_steps": 105,
+  "object_idx": 4,
+  "seed": 7,
+  "test_mode": "isolated floor initial condition",
+  "fallen_initial_orientation": true,
+  "max_arm_floor_penetration_m": 0.0,
+  "max_robot_obstacle_penetration_m": 0.0
+}

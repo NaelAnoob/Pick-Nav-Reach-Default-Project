@@ -1,0 +1,6 @@
+object_idx,seed,success,reason,pick_success,distance_to_goal_m,physics_steps,max_carry_drift_m,carry_stable
+2,0,False,object slipped from the gripper,True,18.904428024572603,5905,0.09123909357025398,False
+4,0,False,object slipped from the gripper,True,18.748629435561472,4875,0.10055195784959768,False
+5,0,False,object slipped from the gripper,True,18.945720688604386,5425,0.09208138977383236,False
+6,0,True,delivered and held at goal,True,0.00022821481982468055,13630,0.007431716361373845,True
+14,0,False,object slipped from the gripper,True,18.948033499396153,5875,0.0962349698458025,False

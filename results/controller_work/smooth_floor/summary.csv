@@ -1,0 +1,16 @@
+object_idx,seed,success,reason,duration_physics_steps,stable_hold_control_steps,final_floor_clearance_m,max_hold_drift_m
+2,0,False,no collision-free floor grasp and stance,95,0,,
+2,7,False,no collision-free floor grasp and stance,95,0,,
+2,42,False,no collision-free floor grasp and stance,95,0,,
+4,0,False,no collision-free floor grasp and stance,105,0,,
+4,7,False,no collision-free floor grasp and stance,105,0,,
+4,42,False,no collision-free floor grasp and stance,105,0,,
+5,0,False,object did not settle on the floor,500,0,,
+5,7,False,object did not settle on the floor,500,0,,
+5,42,False,object did not settle on the floor,500,0,,
+6,0,False,object did not settle on the floor,500,0,,
+6,7,False,object did not settle on the floor,500,0,,
+6,42,False,object did not settle on the floor,500,0,,
+14,0,True,regrasped from floor and held,3725,50,0.6552819286370535,0.0011077130920522146
+14,7,True,regrasped from floor and held,3545,50,0.6497666984729319,0.0008036841539774169
+14,42,True,regrasped from floor and held,3605,50,0.6666389454245895,0.0007505923070355574

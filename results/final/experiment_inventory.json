@@ -1,0 +1,446 @@
+[
+  {
+    "experiment": "aligned",
+    "trials": 4,
+    "picks": 4,
+    "deliveries": 1
+  },
+  {
+    "experiment": "aligned_topdown",
+    "trials": 4,
+    "picks": 4,
+    "deliveries": 0
+  },
+  {
+    "experiment": "alternative_1",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "alternative_2",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "alternative_3",
+    "trials": 2,
+    "picks": 1,
+    "deliveries": 0
+  },
+  {
+    "experiment": "alternative_4",
+    "trials": 2,
+    "picks": 0,
+    "deliveries": 0
+  },
+  {
+    "experiment": "axial",
+    "trials": 4,
+    "picks": 4,
+    "deliveries": 0
+  },
+  {
+    "experiment": "axial_cartesian",
+    "trials": 4,
+    "picks": 4,
+    "deliveries": 0
+  },
+  {
+    "experiment": "balanced",
+    "trials": 4,
+    "picks": 4,
+    "deliveries": 0
+  },
+  {
+    "experiment": "balanced_topdown",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "candidate_diagnosis",
+    "trials": 1,
+    "picks": 0,
+    "deliveries": 1
+  },
+  {
+    "experiment": "cartesian",
+    "trials": 5,
+    "picks": 5,
+    "deliveries": 1
+  },
+  {
+    "experiment": "cartesian_rotate",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "cradle",
+    "trials": 4,
+    "picks": 4,
+    "deliveries": 0
+  },
+  {
+    "experiment": "cradle_joint",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "facet",
+    "trials": 4,
+    "picks": 4,
+    "deliveries": 0
+  },
+  {
+    "experiment": "facet_foam",
+    "trials": 2,
+    "picks": 1,
+    "deliveries": 1
+  },
+  {
+    "experiment": "fast_benchmark",
+    "trials": 15,
+    "picks": 15,
+    "deliveries": 5
+  },
+  {
+    "experiment": "fast_wrench_banana",
+    "trials": 3,
+    "picks": 3,
+    "deliveries": 2
+  },
+  {
+    "experiment": "foam_flip",
+    "trials": 3,
+    "picks": 1,
+    "deliveries": 2
+  },
+  {
+    "experiment": "gentle",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "gentle_cartesian",
+    "trials": 4,
+    "picks": 4,
+    "deliveries": 0
+  },
+  {
+    "experiment": "gentle_cruise",
+    "trials": 3,
+    "picks": 3,
+    "deliveries": 0
+  },
+  {
+    "experiment": "gentle_fast",
+    "trials": 4,
+    "picks": 4,
+    "deliveries": 0
+  },
+  {
+    "experiment": "gentle_faster",
+    "trials": 5,
+    "picks": 5,
+    "deliveries": 0
+  },
+  {
+    "experiment": "gentle_surface",
+    "trials": 4,
+    "picks": 4,
+    "deliveries": 0
+  },
+  {
+    "experiment": "gentle_wrench",
+    "trials": 4,
+    "picks": 4,
+    "deliveries": 0
+  },
+  {
+    "experiment": "haptic",
+    "trials": 3,
+    "picks": 3,
+    "deliveries": 0
+  },
+  {
+    "experiment": "haptic_foam",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 1
+  },
+  {
+    "experiment": "initialized50",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "initialized_support50",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "initialized_topdown55",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "lateral",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "lateral_other",
+    "trials": 3,
+    "picks": 2,
+    "deliveries": 1
+  },
+  {
+    "experiment": "narrow_foam",
+    "trials": 3,
+    "picks": 3,
+    "deliveries": 0
+  },
+  {
+    "experiment": "normal_axis",
+    "trials": 3,
+    "picks": 3,
+    "deliveries": 0
+  },
+  {
+    "experiment": "normal_axis_foam",
+    "trials": 2,
+    "picks": 1,
+    "deliveries": 0
+  },
+  {
+    "experiment": "palm",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "palm_joint",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "quintic",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "quintic_topdown",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "recorded_baseline",
+    "trials": 1,
+    "picks": 1,
+    "deliveries": 0
+  },
+  {
+    "experiment": "regrasp",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "regulated20",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "regulated30",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "regulated50",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "regulated58",
+    "trials": 4,
+    "picks": 4,
+    "deliveries": 0
+  },
+  {
+    "experiment": "regulated_support40",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "regulated_topdown",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "regulated_topdown50",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "rotate",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "scurve1",
+    "trials": 4,
+    "picks": 4,
+    "deliveries": 0
+  },
+  {
+    "experiment": "scurve2",
+    "trials": 5,
+    "picks": 5,
+    "deliveries": 1
+  },
+  {
+    "experiment": "seated",
+    "trials": 2,
+    "picks": 1,
+    "deliveries": 0
+  },
+  {
+    "experiment": "seated_other",
+    "trials": 3,
+    "picks": 3,
+    "deliveries": 1
+  },
+  {
+    "experiment": "seated_staging",
+    "trials": 3,
+    "picks": 0,
+    "deliveries": 0
+  },
+  {
+    "experiment": "servo",
+    "trials": 4,
+    "picks": 4,
+    "deliveries": 0
+  },
+  {
+    "experiment": "servo_cartesian",
+    "trials": 4,
+    "picks": 4,
+    "deliveries": 0
+  },
+  {
+    "experiment": "smooth_rotate",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "smooth_support",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "smooth_topdown",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "solver200",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "solver500",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "support",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "surface",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "surface_topdown",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "tipped",
+    "trials": 2,
+    "picks": 0,
+    "deliveries": 0
+  },
+  {
+    "experiment": "tipped_narrow",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "topdown",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "topdown_rotation_probe",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "vertical",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "vertical50",
+    "trials": 2,
+    "picks": 2,
+    "deliveries": 0
+  },
+  {
+    "experiment": "wrench",
+    "trials": 4,
+    "picks": 4,
+    "deliveries": 1
+  },
+  {
+    "experiment": "wrench_benchmark",
+    "trials": 15,
+    "picks": 12,
+    "deliveries": 2
+  }
+]

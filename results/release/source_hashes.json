@@ -1,0 +1,11 @@
+{
+  "controller.py": "3d53280e25a9becd04dbc76fd8b7cf8c6541d7ae3cd2ad7d541b1dfb3b2c0c87",
+  "grasping.py": "565e92faca4b9ffc50e27e42bd64d3a554eb9c6642f821059a75f6c974f05dd8",
+  "full_task.py": "86f52bb22086e71f4098284460dd1f5a563a8c8c6105d83fb1f130f7f4dfa778",
+  "floor_recovery.py": "d0efe9eafda636f5d23cc75de25563868bccd697456a415dec089c2c65e5e501",
+  "navigation.py": "b28d76830aa1e3124c4f1969d2d3f66c255a608141fda488edac3c35fd9695ec",
+  "pick_nav_reach_env.py": "11a0de614b31e521b8bf1457104d24e972cb139f4ebb8d820b00fcf3edf67b85",
+  "diagnostics.py": "807e1bd8aeaab94801aae161e7bac4c62294e481d86009b9d567ec6e39d4122e",
+  "floor_pick.py": "f1f9994d1df516484858c15c5e9533ffbde585ca4b89d4ce413fe6108beb488c",
+  "requirements.txt": "1f7623ba086a7094a35a5c98fa9c6f5fc6359d6749ba748166a471212d35ff48"
+}

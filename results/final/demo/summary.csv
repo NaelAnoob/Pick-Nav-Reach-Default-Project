@@ -1,0 +1,2 @@
+object_idx,seed,success,reason,pick_success,distance_to_goal_m,physics_steps,max_carry_drift_m,carry_stable
+5,0,True,delivered and held at goal,True,0.05877064043334197,13320,0.06853334732285438,True

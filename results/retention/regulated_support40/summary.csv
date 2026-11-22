@@ -1,0 +1,3 @@
+object_idx,seed,success,reason,pick_success,distance_to_goal_m,physics_steps,max_carry_drift_m,carry_stable
+2,0,False,object slipped from the gripper,True,18.578057005849388,5995,0.10491993957821535,False
+4,0,False,no route for the carrying footprint,True,19.252311103873165,5550,0.03211393771082992,False

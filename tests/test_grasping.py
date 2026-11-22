@@ -1,10 +1,12 @@
 import unittest
+from unittest.mock import patch
 import numpy as np
 import pybullet as p
 
 from controller import GraspExperiment, HoldController
 from grasping import antipodal_margin, generate_grasps
 from pick_nav_reach_env import PickNavReachEnv
+from full_task import FullTaskExperiment
 
 
 class GeometryTests(unittest.TestCase):
@@ -83,6 +85,35 @@ class SimulatorTests(unittest.TestCase):
             self.env.step(np.full(15, np.nan))
         with self.assertRaises(ValueError):
             self.env.step(np.zeros(3))
+
+    def test_payload_queries_restore_object_and_check_obstacles(self):
+        env, exp = self.env, self.experiment
+        q = env.agent_qpos.astype(float)
+        before = p.getBasePositionAndOrientation(env.object_id)
+        ee = p.getLinkState(env.robot_id, exp.planner.ee, computeForwardKinematics=True)
+        # Place a hypothetical payload in the tabletop; collision must reject it.
+        exp.planner.payload = p.multiplyTransforms(*p.invertTransform(ee[4], ee[5]),
+                                                   [0, 0, .6], before[1])
+        try:
+            self.assertFalse(exp.query(lambda: exp.planner.clear(q)))
+            after = p.getBasePositionAndOrientation(env.object_id)
+            np.testing.assert_allclose(after[0], before[0])
+            np.testing.assert_allclose(after[1], before[1])
+            np.testing.assert_array_equal(env.agent_qpos, q)
+        finally:
+            exp.planner.payload = None
+
+    def test_transport_never_relaxes_finger_targets(self):
+        task = FullTaskExperiment(self.env, 'tmp/test-full-output')
+        task.update_payload()
+        task.carry_reference = np.array(task.planner.payload[0])
+        task.transport_started = True
+        action = self.env.agent_qpos.astype(float)
+        action[-2:] = .05
+        with patch.object(GraspExperiment, 'step', return_value=self.env._get_obs()) as step:
+            task.step(action)
+        np.testing.assert_array_equal(step.call_args.args[0][-2:], [0, 0])
+        np.testing.assert_array_equal(action[-2:], [.05, .05])
 
 
 if __name__ == '__main__':

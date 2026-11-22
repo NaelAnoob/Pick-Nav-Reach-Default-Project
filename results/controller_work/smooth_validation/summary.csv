@@ -1,0 +1,26 @@
+object_idx,seed,success,reason,pick_success,distance_to_goal_m,physics_steps,max_carry_drift_m,carry_stable,drops,recovery_attempts,successful_recoveries,recovery_physics_steps,speed_m_s,acceleration_m_s2
+2,1,True,delivered and held at goal,True,0.015189542475784128,13375,0.0179703683959582,True,0,0,0,0,1.2,0.8
+2,11,True,delivered and held at goal,True,0.014962963548644771,13290,0.018204075349556356,True,0,0,0,0,1.2,0.8
+2,23,True,delivered and held at goal,True,0.011671446899941635,12870,0.019607564977949157,True,0,0,0,0,1.2,0.8
+2,83,False,15000 physics-step budget exhausted,True,3.1691157847164586,15000,0.01934473102583831,False,0,0,0,0,1.2,0.8
+2,101,True,delivered and held at goal,True,0.016954657145871594,14040,0.017140695104647892,True,0,0,0,0,1.2,0.8
+4,1,True,delivered and held at goal,True,0.026291114966107972,12705,0.02183711199552854,True,0,0,0,0,1.2,0.8
+4,11,True,delivered and held at goal,True,0.026086812926668056,13275,0.04267425306787486,True,0,0,0,0,1.2,0.8
+4,23,True,delivered and held at goal,True,0.024533977015415268,14025,0.03363093880142199,True,0,0,0,0,1.2,0.8
+4,83,False,15000 physics-step budget exhausted,True,0.032619892374594915,15000,0.04498627412566314,False,0,0,0,0,1.2,0.8
+4,101,False,15000 physics-step budget exhausted,True,1.622530024565565,15000,0.02659396968620759,False,0,0,0,0,1.2,0.8
+5,1,True,delivered and held at goal,True,0.012307796460988148,13710,0.03354580373139271,True,0,0,0,0,1.2,0.8
+5,11,False,final object-position correction blocked,True,0.36323593261295484,12715,0.034043995786152914,False,0,0,0,0,1.2,0.8
+5,23,True,delivered and held at goal,True,0.012618283675805577,14140,0.0038954251390132663,True,0,0,0,0,1.2,0.8
+5,83,True,delivered and held at goal,True,0.01159455707385654,14685,0.03338173308020745,True,0,0,0,0,1.2,0.8
+5,101,True,delivered and held at goal,True,0.011954055213912443,14675,0.02596170939348609,True,0,0,0,0,1.2,0.8
+6,1,False,final object-position correction blocked,True,0.3468077985780026,11790,0.00237445703477875,False,0,0,0,0,1.2,0.8
+6,11,False,final object-position correction blocked,True,0.3509069376563974,12505,0.004190736234087467,False,0,0,0,0,1.2,0.8
+6,23,True,delivered and held at goal,True,0.0014170511406676903,14225,0.0010185229193220356,True,0,0,0,0,1.2,0.8
+6,83,True,delivered and held at goal,True,0.00477089678468179,13915,0.011021970642329187,True,0,0,0,0,1.2,0.8
+6,101,True,delivered and held at goal,True,0.0034367770581058997,14595,0.007327841954048071,True,0,0,0,0,1.2,0.8
+14,1,False,final object-position correction blocked,True,0.3462915716743971,11875,0.015636909330986347,False,0,0,0,0,1.2,0.8
+14,11,False,final object-position correction blocked,True,0.3496159846591979,12630,0.0010215752709634084,False,0,0,0,0,1.2,0.8
+14,23,True,delivered and held at goal,True,0.0010861047472093175,14060,0.0010019138153215654,True,0,0,0,0,1.2,0.8
+14,83,True,delivered and held at goal,True,0.0008475756409351458,14125,0.0021321031606942754,True,0,0,0,0,1.2,0.8
+14,101,False,15000 physics-step budget exhausted,True,0.05363477124691804,15000,0.015009166534840374,False,0,0,0,0,1.2,0.8

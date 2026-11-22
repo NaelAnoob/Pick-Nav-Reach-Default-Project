@@ -1,0 +1,7 @@
+object_idx,seed,success,reason,duration_physics_steps,stable_hold_control_steps,final_floor_clearance_m,max_hold_drift_m
+5,0,True,regrasped from floor and held,4225,50,0.64867693018334,0.0006563334165778778
+5,7,True,regrasped from floor and held,4625,50,0.6310928613070944,0.0007211267794193932
+5,42,True,regrasped from floor and held,4645,50,0.5783760835845219,0.000609145035027095
+6,0,True,regrasped from floor and held,4745,50,0.6613860727593119,0.0007379629020559384
+6,7,False,floor grasp did not remain stable,4360,0,-0.022396800978419323,2.1749080671380432e-05
+6,42,True,regrasped from floor and held,4195,50,0.6542830510595048,0.0009196323712136449

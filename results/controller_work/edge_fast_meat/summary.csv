@@ -1,0 +1,4 @@
+object_idx,seed,success,reason,pick_success,distance_to_goal_m,physics_steps,max_carry_drift_m,carry_stable,drops,recovery_attempts,successful_recoveries,recovery_physics_steps,speed_m_s,acceleration_m_s2
+4,0,True,delivered and held at goal,True,0.021274929520066824,14620,0.022070335307968817,True,0,0,0,0,1.5,1.2
+4,7,False,15000 physics-step budget exhausted,True,0.022467089027185232,15000,0.02818746857132682,False,0,0,0,0,1.5,1.2
+4,42,True,delivered and held at goal,True,0.022918805368648786,14490,0.028152017443205064,True,0,0,0,0,1.5,1.2

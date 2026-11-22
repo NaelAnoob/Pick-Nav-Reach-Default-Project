@@ -1,0 +1,5 @@
+object_idx,seed,success,reason,pick_success,distance_to_goal_m,physics_steps,max_carry_drift_m,carry_stable
+2,0,False,no collision-free carrying posture,True,18.070065803715554,3595,0.0,False
+4,0,False,object slipped from the gripper,True,18.91139444105129,5740,0.09690689938689949,False
+5,0,False,no collision-free carrying posture,True,18.069350635543593,3255,0.0,False
+14,0,False,no collision-free carrying posture,True,18.07480645104227,3385,0.0,False

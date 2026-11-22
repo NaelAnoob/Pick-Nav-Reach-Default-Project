@@ -1,0 +1,16 @@
+object_idx,seed,success,reason,pick_success,distance_to_goal_m,physics_steps,max_carry_drift_m,carry_stable,drops,recovery_attempts,successful_recoveries,recovery_physics_steps,speed_m_s,acceleration_m_s2
+2,0,True,delivered and held at goal,True,0.009920661187994145,12105,0.025733316569374748,True,0,0,0,0,1.8,0.8
+2,23,True,delivered and held at goal,True,0.013376678802078339,12115,0.020693683030289213,True,0,0,0,0,1.8,0.8
+2,42,True,delivered and held at goal,True,0.01803985429538853,11760,0.020218537117317453,True,0,0,0,0,1.8,0.8
+4,0,True,delivered and held at goal,True,0.02293641143392407,12025,0.025450122156566116,True,0,0,0,0,1.8,0.8
+4,23,True,delivered and held at goal,True,0.02003099269832722,13180,0.03168412322416032,True,0,0,0,0,1.8,0.8
+4,42,True,delivered and held at goal,True,0.01967734602494811,11460,0.0331436647917991,True,0,0,0,0,1.8,0.8
+5,0,True,delivered and held at goal,True,0.02065493166692183,11215,0.032600095472757586,True,0,0,0,0,1.8,0.8
+5,23,True,delivered and held at goal,True,0.013007434357814929,13140,0.0024909291652438124,True,0,0,0,0,1.8,0.8
+5,42,True,delivered and held at goal,True,0.012220206139855035,11655,0.025227892780044822,True,0,0,0,0,1.8,0.8
+6,0,True,delivered and held at goal,True,0.002056971993156141,11010,0.0044339246252123685,True,0,0,0,0,1.8,0.8
+6,23,True,delivered and held at goal,True,0.0006275147032962371,13220,0.0016048445579529026,True,0,0,0,0,1.8,0.8
+6,42,True,delivered and held at goal,True,0.003086650916416744,11685,0.00592652192625026,True,0,0,0,0,1.8,0.8
+14,0,True,delivered and held at goal,True,0.01813276588372146,11530,0.02042001822770626,True,0,0,0,0,1.8,0.8
+14,23,True,delivered and held at goal,True,0.0013016233081638872,13110,0.001852220974502562,True,0,0,0,0,1.8,0.8
+14,42,True,delivered and held at goal,True,0.004533059261038497,12265,0.003920637623153989,True,0,0,0,0,1.8,0.8

@@ -1,0 +1,215 @@
+{
+  "phases": [
+    {
+      "phase": "settle",
+      "observations": 60,
+      "first_physics_step": 5,
+      "last_physics_step": 300,
+      "bilateral_fraction": 0.0,
+      "median_normal_force_n": [
+        0.0,
+        0.0
+      ],
+      "peak_friction_utilization": null,
+      "max_relative_translation_m": 0.0,
+      "max_relative_rotation_rad": 0.0,
+      "max_gripper_rotation_rad": 0.0
+    },
+    {
+      "phase": "ready",
+      "observations": 65,
+      "first_physics_step": 305,
+      "last_physics_step": 625,
+      "bilateral_fraction": 0.0,
+      "median_normal_force_n": [
+        0.0,
+        0.0
+      ],
+      "peak_friction_utilization": null,
+      "max_relative_translation_m": 0.0,
+      "max_relative_rotation_rad": 0.0,
+      "max_gripper_rotation_rad": 0.0
+    },
+    {
+      "phase": "base approach",
+      "observations": 99,
+      "first_physics_step": 630,
+      "last_physics_step": 1120,
+      "bilateral_fraction": 0.0,
+      "median_normal_force_n": [
+        0.0,
+        0.0
+      ],
+      "peak_friction_utilization": null,
+      "max_relative_translation_m": 0.0,
+      "max_relative_rotation_rad": 0.0,
+      "max_gripper_rotation_rad": 0.0
+    },
+    {
+      "phase": "pregrasp",
+      "observations": 77,
+      "first_physics_step": 1125,
+      "last_physics_step": 1505,
+      "bilateral_fraction": 0.0,
+      "median_normal_force_n": [
+        0.0,
+        0.0
+      ],
+      "peak_friction_utilization": null,
+      "max_relative_translation_m": 0.0,
+      "max_relative_rotation_rad": 0.0,
+      "max_gripper_rotation_rad": 0.0
+    },
+    {
+      "phase": "approach",
+      "observations": 49,
+      "first_physics_step": 1510,
+      "last_physics_step": 1750,
+      "bilateral_fraction": 0.0,
+      "median_normal_force_n": [
+        0.0,
+        0.0
+      ],
+      "peak_friction_utilization": null,
+      "max_relative_translation_m": 0.0,
+      "max_relative_rotation_rad": 0.0,
+      "max_gripper_rotation_rad": 0.0
+    },
+    {
+      "phase": "close",
+      "observations": 71,
+      "first_physics_step": 1755,
+      "last_physics_step": 2105,
+      "bilateral_fraction": 0.49295774647887325,
+      "median_normal_force_n": [
+        0.3128674545709983,
+        0.0
+      ],
+      "peak_friction_utilization": 1.0,
+      "max_relative_translation_m": 0.0,
+      "max_relative_rotation_rad": 0.0,
+      "max_gripper_rotation_rad": 0.0
+    },
+    {
+      "phase": "lift",
+      "observations": 107,
+      "first_physics_step": 2110,
+      "last_physics_step": 2640,
+      "bilateral_fraction": 1.0,
+      "median_normal_force_n": [
+        60.2560465114787,
+        60.01033030344782
+      ],
+      "peak_friction_utilization": 0.37193581905778444,
+      "max_relative_translation_m": 0.0,
+      "max_relative_rotation_rad": 0.0,
+      "max_gripper_rotation_rad": 0.0
+    },
+    {
+      "phase": "hold",
+      "observations": 100,
+      "first_physics_step": 2645,
+      "last_physics_step": 3140,
+      "bilateral_fraction": 1.0,
+      "median_normal_force_n": [
+        60.00044769495345,
+        59.997385197139465
+      ],
+      "peak_friction_utilization": 0.41165201005544333,
+      "max_relative_translation_m": 0.0014739453711075864,
+      "max_relative_rotation_rad": 0.029895838702087126,
+      "max_gripper_rotation_rad": 6.206625987621905e-06
+    },
+    {
+      "phase": "tuck",
+      "observations": 75,
+      "first_physics_step": 3145,
+      "last_physics_step": 3515,
+      "bilateral_fraction": 1.0,
+      "median_normal_force_n": [
+        59.77957114399751,
+        60.09035646877627
+      ],
+      "peak_friction_utilization": 1.0000000000000002,
+      "max_relative_translation_m": 0.022846382408573635,
+      "max_relative_rotation_rad": 0.36334009148683855,
+      "max_gripper_rotation_rad": 0.14603098880611337
+    },
+    {
+      "phase": "retreat",
+      "observations": 150,
+      "first_physics_step": 3520,
+      "last_physics_step": 4265,
+      "bilateral_fraction": 1.0,
+      "median_normal_force_n": [
+        60.0078097048295,
+        59.855937304967206
+      ],
+      "peak_friction_utilization": 1.0000000000000002,
+      "max_relative_translation_m": 0.025568732309434242,
+      "max_relative_rotation_rad": 0.34076496587840227,
+      "max_gripper_rotation_rad": 7.384320236139143e-05
+    },
+    {
+      "phase": "navigate",
+      "observations": 38,
+      "first_physics_step": 4270,
+      "last_physics_step": 4455,
+      "bilateral_fraction": 0.8947368421052632,
+      "median_normal_force_n": [
+        69.45437615736643,
+        48.3134819504457
+      ],
+      "peak_friction_utilization": 1.0000000000000002,
+      "max_relative_translation_m": 0.09731141337328197,
+      "max_relative_rotation_rad": 1.2309123707759502,
+      "max_gripper_rotation_rad": 0.007645489139681554
+    }
+  ],
+  "first_pose_warning": {
+    "physics_steps": 3245,
+    "phase": "tuck",
+    "translation_m": 0.010416839629983209,
+    "rotation_rad": 0.16510317362394683
+  },
+  "first_sustained_contact_loss": {
+    "physics_steps": 4450,
+    "phase": "navigate"
+  },
+  "warning_definition": "Observed relative translation > 10 mm or rotation > 15 degrees; warning alone is not a drop.",
+  "contact_loss_definition": "Three consecutive control observations without positive force on both fingers.",
+  "last_observation": {
+    "step": 891,
+    "physics_steps": 4455,
+    "phase": "navigate",
+    "object_z": 0.929454476041829,
+    "bottom_z": 0.8660874499308545,
+    "clearance": 0.2400874499308545,
+    "bilateral_contact": false,
+    "relative_drift": 0.09731141337328197,
+    "relative_rotation_rad": 1.2309123707759502,
+    "gripper_rotation_rad": 0.005928613833823529,
+    "gripper_x_m": -0.8706713914871216,
+    "gripper_y_m": -0.2370108813047409,
+    "gripper_z_m": 1.0481005907058716,
+    "relative_x_m": 0.10863161087036133,
+    "relative_y_m": -0.004207223653793335,
+    "relative_z_m": 0.05351537466049194,
+    "finger_1_force_n": 0.0,
+    "finger_2_force_n": 0.0,
+    "finger_1_tangent_n": 0.0,
+    "finger_2_tangent_n": 0.0,
+    "finger_1_friction": 0.25,
+    "finger_2_friction": 0.25,
+    "finger_1_position_m": 0.01402339432388544,
+    "finger_2_position_m": 0.019161973148584366,
+    "base_speed_m_s": 0.2745831608772278,
+    "base_x_m": -1.3205074071884155,
+    "base_y_m": -0.23509538173675537,
+    "torso_height_m": 0.35010024905204773,
+    "torso_target_m": 0.3502075672149658,
+    "max_arm_tracking_error_rad": 0.00525432825088501,
+    "arm_floor_penetration_m": 0.0,
+    "obstacle_penetration_m": 0.0
+  }
+}

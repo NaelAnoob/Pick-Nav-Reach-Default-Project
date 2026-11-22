@@ -1,0 +1,26 @@
+object_idx,seed,success,reason,pick_success,distance_to_goal_m,physics_steps,max_carry_drift_m,carry_stable
+2,1,False,object slipped from the gripper,True,17.475839038461533,3690,0.09346604795110355,False
+2,11,False,object slipped from the gripper,True,18.112300453711416,4215,0.09631716482785485,False
+2,23,False,object slipped from the gripper,True,18.434156704350787,5330,0.09561393876589816,False
+2,83,False,object slipped from the gripper,True,17.59462370271472,5670,0.10140713680808135,False
+2,101,False,object slipped from the gripper,True,18.39047730217646,5560,0.09956368921795997,False
+4,1,False,object slipped from the gripper,True,18.48408547331697,4845,0.0954691674090515,False
+4,11,False,object slipped from the gripper,True,17.75670233775152,3615,0.1047902020460155,False
+4,23,False,object slipped from the gripper,True,18.40032530488697,5405,0.10190559399124385,False
+4,83,False,object slipped from the gripper,True,17.854125048776677,4850,0.09803937836523623,False
+4,101,False,object slipped from the gripper,True,18.425984443999425,4995,0.09024166159667,False
+5,1,False,object slipped from the gripper,True,13.095082869250572,7705,0.09083479203772231,False
+5,11,False,no route for the carrying footprint,True,18.88884876539554,5075,0.038400686825376104,False
+5,23,True,delivered and held at goal,True,0.052812259907137456,14575,0.059940643313954295,True
+5,83,False,15000 physics-step budget exhausted,True,0.8449889802847776,15000,0.04250310921021335,False
+5,101,False,object slipped from the gripper,True,18.271955499141246,4740,0.09401625184883856,False
+6,1,True,delivered and held at goal,True,0.006076626731749043,13715,0.005107560485031298,True
+6,11,False,final object-position correction blocked,True,0.3563825914004339,13780,0.013010703084103173,False
+6,23,True,delivered and held at goal,True,0.004279522689467399,14425,0.00529830282365698,True
+6,83,True,delivered and held at goal,True,0.0013371280111591417,14580,0.008946604724552238,True
+6,101,False,15000 physics-step budget exhausted,True,0.005401053713561723,15000,0.006858129480841538,False
+14,1,False,object slipped from the gripper,True,8.974270115543892,10730,0.11173499062411238,False
+14,11,False,object slipped from the gripper,True,18.95815382824955,5590,0.1028140851209042,False
+14,23,False,object slipped from the gripper,True,18.35587263275231,5920,0.095082189481259,False
+14,83,False,object slipped from the gripper,True,1.1821042606566374,13675,0.09181462133489082,False
+14,101,False,15000 physics-step budget exhausted,True,0.027821722914799677,15000,0.021460467842686386,False

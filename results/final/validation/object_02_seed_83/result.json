@@ -1,0 +1,59 @@
+{
+  "object_idx": 2,
+  "seed": 83,
+  "reason": "executed",
+  "scoring": "geometry",
+  "fast_pick": true,
+  "shape_ratio": 1.5135170907524986,
+  "effective_friction": [
+    0.25,
+    0.25
+  ],
+  "proposals": 80,
+  "selected": true,
+  "success": true,
+  "first_lift_physics_steps": 2420,
+  "max_clearance_m": 0.18395919778865744,
+  "final_clearance_m": 0.18395919778865744,
+  "stable_hold_control_steps": 100,
+  "stable_hold_physics_steps": 500,
+  "control_steps": 651,
+  "physics_steps": 3255,
+  "collision_checks": 4171,
+  "wall_seconds": 7.067190200003097,
+  "max_hold_relative_drift_m": 0.00037625008982094464,
+  "mu_filter": 0.5,
+  "position_error_m": 0.002890511189721203,
+  "orientation_error_rad": 2.9423026210162817e-05,
+  "max_robot_obstacle_penetration_m": 0.0,
+  "sustained_hold": true,
+  "planned_lift_m": 0.19,
+  "grasp": {
+    "contacts": [
+      [
+        -0.00030188869187302203,
+        0.0334596044853594,
+        0.6999774042462303
+      ],
+      [
+        0.00046435997574289253,
+        -0.03200326063308464,
+        0.7001514596543473
+      ]
+    ],
+    "center": [
+      8.123564193493525e-05,
+      0.0007281719261373817,
+      0.7000644319502889
+    ],
+    "quaternion": [
+      0.7070995485283649,
+      0.0031981980836847264,
+      -0.707088546594496,
+      0.005078117257721323
+    ],
+    "width": 0.06546758084595242,
+    "cone_margin": 0.10329822165495095,
+    "transport_capacity_kg": null
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "original": {
+    "picks": "13/15",
+    "deliveries": "5/15"
+  },
+  "development": {
+    "picks": "15/15",
+    "deliveries": "6/15"
+  },
+  "fresh": {
+    "picks": "25/25",
+    "deliveries": "4/25"
+  },
+  "isolated_floor_pick": "9/15",
+  "comparison": {
+    "Standard, no recovery": "2/5",
+    "Standard, recovery": "2/5",
+    "Faster, no recovery": "1/5",
+    "Faster, recovery": "1/5"
+  }
+}
