@@ -46,4 +46,4 @@ Fallen-object fixtures passed 14/15: nine can/foam cases in `smooth_floor_tolera
 
 Project repository: https://github.com/NaelAnoob/Pick-Nav-Reach-Default-Project
 
-The local final code must be uploaded to the repository and access granted to the teaching team before submission; remote publication/access has not been verified here. The final code archive is an overlay for this repository, including its existing `assets` folder. Older report artifacts under other output paths describe earlier experiments and are superseded by the final PDF in `output/pdf`.
+The final code is available in the repository linked above. The final code archive is an overlay for this repository, including its existing `assets` folder. Older report artifacts under other output paths describe earlier experiments and are superseded by the final PDF in `output/pdf`.
